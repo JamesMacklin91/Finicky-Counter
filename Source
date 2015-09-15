@@ -1,0 +1,28 @@
+//Finicky Counter
+//created by James Macklin
+//demonstrates break and continue statements
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int count = 0;
+	while (true)
+	{
+		count += 1;//adds 1 to the count
+
+		if (count > 10)
+		{
+			break;//this will end the loop if the count is greater than 10
+		}
+		if (count == 5)
+		{
+			continue;//if the count is 5 skip the number
+		}
+
+		cout << count << endl;
+	}
+
+	return 0;
+}//you can use break and continue statements in any loop created but they should be used sparingly as they make it harder for programmers to see the flow of the loop
